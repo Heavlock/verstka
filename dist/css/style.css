@@ -649,6 +649,21 @@ footer li a:hover {
 
 /*media*/
 
+.webp .slick-arrow {
+  background: url(../img/arrow.webp) no-repeat;
+}
+
+.webp header {
+  background-image: url(../img/headersm3.webp);
+}
+
+.webp .social4,
+.webp .social3,
+.webp .social2,
+.webp .social1 {
+  background-image: url(../img/soc.webp);
+}
+
 @media (min-width: 721px) {
   .col-md-6,
   .col-md-12,
@@ -811,6 +826,12 @@ footer li a:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .footer__btn_transparent {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 740px) {
   .footer__btn_transparent {
     margin-top: 25px;
@@ -830,15 +851,13 @@ footer li a:hover {
   .webp .social1 {
     background-image: url(../img/soc.webp);
   }
-}
 
-@media (max-width: 740px) and (max-width: 540px) {
   ul.header__main_menu {
     top: 70px;
   }
 
   header {
-    background-size: 100%;
+    background-size: 70%;
     height: 470px;
   }
 
@@ -926,7 +945,7 @@ footer li a:hover {
     transition: 1s;
   }
 
-  .icon-phone:hover {
+  .icon-phone:not(:footer):hover {
     font-weight: 900;
     font-size: 17px;
   }
@@ -1078,10 +1097,15 @@ footer li a:hover {
   }
 }
 
-@media (max-width: 740px) and (max-width: 390px) {
+@media (max-width: 540px) {
+  header {
+    background-size: 90%;
+  }
+}
+
+@media (max-width: 390px) {
   header {
     background-size: 150%;
-    height: 470px;
   }
 
   .animate.f1,
