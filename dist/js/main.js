@@ -18,10 +18,13 @@ $(document).ready(function () {
   let test = document.querySelectorAll('.fly-elements');
   console.log(test);
   test.forEach((test) => test.classList.add('animate'));
+
   $('.header__nav.icon-menu').click(function () {
-    $('nav.header__nav').toggleClass('active-mobile-menu');
-    $('nav.header__nav').toggle('400');
-    $('body').toggleClass('active-mobile-menu');
+    if (screen.width < 1023) {
+      $('nav.header__nav').toggleClass('active-mobile-menu');
+      $('nav.header__nav').toggle('400');
+      $('body').toggleClass('active-mobile-menu');
+    }
   });
 
   $('button.icon-phone').click(function () {
