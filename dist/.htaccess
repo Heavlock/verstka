@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_URI} ^/.git/$
+RewriteRule ^.*$ /? [R=301,L]
